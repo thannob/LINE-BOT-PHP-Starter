@@ -17,8 +17,8 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
-			if ($text = 'aeng'){
-				$replyText = 'สวัสดีครับ มยุรวรรณ';
+			if ($text = '1'){
+				$replyText = '1';
 			}
 			else {
 				$replyText = $text ;
