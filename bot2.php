@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
  
 $strAccessToken = "Oski+YFKV4aTJxTBVuR1KN+OvOBlNgTKi9YQI/lHz1fdnP5h7NPD0571e+9G1dwCQXmF08SKvDs+UU6tixRi8usk6MlF2IwNLygDxchhQf6lU+6UdnPMCzR4Wkrs51oaQc0AURQjWhU7hhOh7xNCmAdB04t89/1O/w1cDnyilFU=";
  
@@ -11,26 +11,26 @@ $arrHeader = array();
 $arrHeader[] = "Content-Type: application/json";
 $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
  
-if($arrJson['events'][0]['message']['text'] == "ÊÇÑÊ´Õ"){
+if($arrJson['events'][0]['message']['text'] == "à¸ªà¸§à¸±à¸ªà¸”à¸µ"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ÊÇÑÊ´Õ ID ¤Ø³¤×Í ".$arrJson['events'][0]['source']['userId'];
-}else if($arrJson['events'][0]['message']['text'] == "ª×èÍÍÐäÃ"){
+  $arrPostData['messages'][0]['text'] = "à¸ªà¸§à¸±à¸ªà¸”à¸µ ID à¸„à¸¸à¸“à¸„à¸·à¸­ ".$arrJson['events'][0]['source']['userId'];
+}else if($arrJson['events'][0]['message']['text'] == "à¸Šà¸·à¹ˆà¸­à¸­à¸°à¹„à¸£"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "©Ñ¹ÂÑ§äÁèÁÕª×èÍ¹Ð";
-}else if($arrJson['events'][0]['message']['text'] == "·ÓÍÐäÃä´éºéÒ§"){
+  $arrPostData['messages'][0]['text'] = "à¸‰à¸±à¸™à¸¢à¸±à¸‡à¹„à¸¡à¹ˆà¸¡à¸µà¸Šà¸·à¹ˆà¸­à¸™à¸°";
+}else if($arrJson['events'][0]['message']['text'] == "à¸—à¸³à¸­à¸°à¹„à¸£à¹„à¸”à¹‰à¸šà¹‰à¸²à¸‡"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "©Ñ¹·ÓÍÐäÃäÁèä´éàÅÂ ¤Ø³µéÍ§ÊÍ¹©Ñ¹ÍÕ¡àÂÍÐ";
+  $arrPostData['messages'][0]['text'] = "à¸‰à¸±à¸™à¸—à¸³à¸­à¸°à¹„à¸£à¹„à¸¡à¹ˆà¹„à¸”à¹‰à¹€à¸¥à¸¢ à¸„à¸¸à¸“à¸•à¹‰à¸­à¸‡à¸ªà¸­à¸™à¸‰à¸±à¸™à¸­à¸µà¸à¹€à¸¢à¸­à¸°";
 }else{
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "©Ñ¹äÁèà¢éÒã¨¤ÓÊÑè§";
+  $arrPostData['messages'][0]['text'] = "à¸‰à¸±à¸™à¹„à¸¡à¹ˆà¹€à¸‚à¹‰à¸²à¹ƒà¸ˆà¸„à¸³à¸ªà¸±à¹ˆà¸‡";
 }
  
  
