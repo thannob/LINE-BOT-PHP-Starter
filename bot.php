@@ -16,7 +16,7 @@ if (!is_null($events['events'])) {
 
 			// Get replyToken
 			$replyToken = $event['replyToken'];
-			echo $text . "\r\n";
+			echo $text . " TEXT\r\n";
 
 			if ($text = '1'){
 				$replyText = '1';
