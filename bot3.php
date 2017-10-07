@@ -20,14 +20,14 @@ if($arrJson['events'][0]['message']['text'] == "คุณชื่ออะไ�
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "template";
-  $arrPostData['messages'][0]['template'][0]['type']= "Confitm";
-  $arrPostData['messages'][0]['template'][0]['type']= "Are you sure?";
-  $arrPostData['messages'][0]['template'][0]['actions'][0]['type']= "message";
-  $arrPostData['messages'][0]['template'][0]['actions'][0]['label']= "Yes";
-  $arrPostData['messages'][0]['template'][0]['actions'][0]['text']= "yes";
-  $arrPostData['messages'][0]['template'][0]['actions'][1]['type']= "message";
-  $arrPostData['messages'][0]['template'][0]['actions'][1]['label']= "No";
-  $arrPostData['messages'][0]['template'][0]['actions'][1]['text']= "no";
+  $arrPostData['messages'][0]['template']['type']= "Confitm";
+  $arrPostData['messages'][0]['template']['type']= "Are you sure?";
+  $arrPostData['messages'][0]['template']['actions'][0]['type']= "message";
+  $arrPostData['messages'][0]['template']['actions'][0]['label']= "Yes";
+  $arrPostData['messages'][0]['template']['actions'][0]['text']= "yes";
+  $arrPostData['messages'][0]['template']['actions'][1]['type']= "message";
+  $arrPostData['messages'][0]['template']['actions'][1]['label']= "No";
+  $arrPostData['messages'][0]['template']['actions'][1]['text']= "no";
 }
  
  
