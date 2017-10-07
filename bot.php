@@ -14,7 +14,7 @@ if (!is_null($events['events'])) {
 			// Get text sent
 			$text = $event['message']['text'];
 
-			if($text = "สวัสดีครับ"){
+			if($text = 'สวัสดีครับ'){
 				// Get replyToken
 				$replyToken = $event['replyToken'];
 
