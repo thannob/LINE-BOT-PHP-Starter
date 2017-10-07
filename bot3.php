@@ -21,7 +21,7 @@ if($arrJson['events'][0]['message']['text'] == "คุณชื่ออะไ�
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "template";
   $arrPostData['messages'][0]['template']['type']= "Confirm";
-  $arrPostData['messages'][0]['template']['type']= "Are you sure?";
+  $arrPostData['messages'][0]['template']['text']= "Are you sure?";
   $arrPostData['messages'][0]['template']['actions'][0]['type']= "message";
   $arrPostData['messages'][0]['template']['actions'][0]['label']= "Yes";
   $arrPostData['messages'][0]['template']['actions'][0]['text']= "yes";
