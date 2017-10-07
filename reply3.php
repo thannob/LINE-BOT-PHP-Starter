@@ -20,8 +20,8 @@ if($arrJson['events'][0]['message']['text'] == "text"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "image";
-  $arrPostData['messages'][0]['originalContentUrl'] = "https://secret-wave-21341.herokuapp.com/image/it_rsu.jpg";
-  $arrPostData['messages'][0]['previewImageUrl'] = "https://secret-wave-21341.herokuapp.com/image/preview_it_rsu.jpg";
+  $arrPostData['messages'][0]['originalContentUrl'] = "https://secret-wave-21341.herokuapp.com/it_rsu.jpg";
+  $arrPostData['messages'][0]['previewImageUrl'] = "https://secret-wave-21341.herokuapp.com/preview_it_rsu.jpg";
 }else if($arrJson['events'][0]['message']['text'] == "ทำอะไรได้บ้าง"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
