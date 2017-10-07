@@ -19,7 +19,7 @@ if (!is_null($events['events'])) {
 			echo $text . " TEXT\r\n";
 
 			if ($text = '1'){
-				$replyText = '1';
+				$replyText = 'thannob';
 			}
 			else {
 				$replyText = $text ;
