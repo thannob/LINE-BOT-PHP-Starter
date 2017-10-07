@@ -30,6 +30,12 @@ if($arrJson['events'][0]['message']['text'] == "text"){
   $arrPostData['messages'][0]['address'] = "52/347 เอกทักษิณ Tambon Lak Hok, จังหวัด ปทุมธานี 12000";
   $arrPostData['messages'][0]['latitude'] = 13.9652;
   $arrPostData['messages'][0]['longitude'] = 100.588;
+else if($arrJson['events'][0]['message']['text'] == "sticker"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "sticker";
+  $arrPostData['messages'][0]['packageId'] = "1";
+  $arrPostData['messages'][0]['stickerId'] = "1";
 }else{
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
