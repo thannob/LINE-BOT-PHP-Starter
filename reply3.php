@@ -35,7 +35,7 @@ if($arrJson['events'][0]['message']['text'] == "text"){
   $arrPostData['messages'][0]['address'] = "52/347 เอกทักษิณ Tambon Lak Hok, จังหวัด ปทุมธานี 12000";
   $arrPostData['messages'][0]['latitude'] = 35.65910807942215;
   $arrPostData['messages'][0]['longitude'] = 139.70372892916203;
-else if($arrJson['events'][0]['message']['text'] == "sticker"){
+}else if($arrJson['events'][0]['message']['text'] == "sticker"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "sticker";
