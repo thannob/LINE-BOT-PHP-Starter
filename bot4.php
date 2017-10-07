@@ -11,7 +11,7 @@ $arrHeader = array();
 $arrHeader[] = "Content-Type: application/json";
 $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
  
-if($arrJson['events'][0]['message']['text'] == "ก" ){
+if($arrJson['events'][0]['message']['text'] == "คุณชื่ออะไร" ){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
@@ -21,13 +21,13 @@ if($arrJson['events'][0]['message']['text'] == "ก" ){
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "สวัสดีครับ IDของคุณ คือ ".$arrJson['events'][0]['source']['userId'];
-}else if($arrJson['events'][0]['message']['text'] == "image"){
+}else if($arrJson['events'][0]['message']['text'] == "รูป"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "image";
   $arrPostData['messages'][0]['originalContentUrl'] = "https://secret-wave-21341.herokuapp.com/it_rsu.jpg";
   $arrPostData['messages'][0]['previewImageUrl'] = "https://secret-wave-21341.herokuapp.com/preview_it_rsu.jpg";
-}else if($arrJson['events'][0]['message']['text'] == "location"){
+}else if($arrJson['events'][0]['message']['text'] == "ที่อยู่"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "location";
