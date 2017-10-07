@@ -15,20 +15,12 @@ if (!is_null($events['events'])) {
 			$text = $event['message']['text'];
 
 			// Get replyToken
-			$replyToken = $event['replyToken'];
-			echo $text . " TEXT\r\n";
-
-			if ($text = '1'){
-				$replyText = 'thannob';
-			}
-			else {
-				$replyText = $text ;
-			}			
+			$replyToken = $event['replyToken'];			
 
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => $replyText 
+				'text' => $text 
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
