@@ -27,7 +27,7 @@ if($arrJson['events'][0]['message']['text'] == "คุณชื่ออะไ�
   $arrPostData['messages'][0]['type'] = "image";
   $arrPostData['messages'][0]['originalContentUrl'] = "https://secret-wave-21341.herokuapp.com/it_rsu.jpg";
   $arrPostData['messages'][0]['previewImageUrl'] = "https://secret-wave-21341.herokuapp.com/preview_it_rsu.jpg";
-}else if($arrJson['events'][0]['message']['text'] == ที่อยู่{
+}else if($arrJson['events'][0]['message']['text'] == "ที่อยู่"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "location";
