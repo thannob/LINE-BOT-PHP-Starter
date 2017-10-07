@@ -16,7 +16,7 @@ if($arrJson['events'][0]['message']['text'] == "text"){
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "สวัสดีครับผมชื่อ ธรรณพ อารีพรรค";
-}elseif($arrJson['events'][0]['message']['text'] == "สวัสดี"){
+}else if($arrJson['events'][0]['message']['text'] == "สวัสดี"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
