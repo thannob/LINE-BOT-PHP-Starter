@@ -22,11 +22,14 @@ if($arrJson['events'][0]['message']['text'] == "text"){
   $arrPostData['messages'][0]['type'] = "image";
   $arrPostData['messages'][0]['originalContentUrl'] = "https://secret-wave-21341.herokuapp.com/it_rsu.jpg";
   $arrPostData['messages'][0]['previewImageUrl'] = "https://secret-wave-21341.herokuapp.com/preview_it_rsu.jpg";
-}else if($arrJson['events'][0]['message']['text'] == "ทำอะไรได้บ้าง"){
+}else if($arrJson['events'][0]['message']['text'] == "location"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-  $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ฉันทำอะไรไม่ได้เลย คุณต้องสอนฉันอีกเยอะ";
+  $arrPostData['messages'][0]['type'] = "location";
+  $arrPostData['messages'][0]['title'] = "Rangsit University";
+  $arrPostData['messages'][0]['address'] = "52/347 เอกทักษิณ Tambon Lak Hok, จังหวัด ปทุมธานี 12000";
+  $arrPostData['messages'][0]['latitude'] = "13.9652";
+  $arrPostData['messages'][0]['logitude'] = "100.588";
 }else{
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
