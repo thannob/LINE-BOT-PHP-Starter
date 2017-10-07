@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $access_token = 'Oski+YFKV4aTJxTBVuR1KN+OvOBlNgTKi9YQI/lHz1fdnP5h7NPD0571e+9G1dwCQXmF08SKvDs+UU6tixRi8usk6MlF2IwNLygDxchhQf6lU+6UdnPMCzR4Wkrs51oaQc0AURQjWhU7hhOh7xNCmAdB04t89/1O/w1cDnyilFU=';
 
 // Get POST body content
@@ -17,10 +17,17 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
+			if ($text = 'thannob'){
+				$replyText = 'สวัสดีครับผมธรรณพ';
+			}
+			else {
+				$replyText = $text ;
+			}			
+
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => $text
+				'text' => $replyText 
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
