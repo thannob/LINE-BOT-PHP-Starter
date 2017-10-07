@@ -20,6 +20,7 @@ if($arrJson['events'][0]['message']['text'] == "คุณชื่ออะไ�
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "template";
+  $arrPostData['messages'][0]['altText'] = "This is a confirm template";	
   $arrPostData['messages'][0]['template']['type']= "Confirm";
   $arrPostData['messages'][0]['template']['text']= "Are you sure?";
   $arrPostData['messages'][0]['template']['actions'][0]['type']= "message";
