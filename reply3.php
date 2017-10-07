@@ -28,8 +28,8 @@ if($arrJson['events'][0]['message']['text'] == "text"){
   $arrPostData['messages'][0]['type'] = "location";
   $arrPostData['messages'][0]['title'] = "Rangsit University";
   $arrPostData['messages'][0]['address'] = "52/347 เอกทักษิณ Tambon Lak Hok, จังหวัด ปทุมธานี 12000";
-  $arrPostData['messages'][0]['latitude'] = "13.9652";
-  $arrPostData['messages'][0]['logitude'] = "100.588";
+  $arrPostData['messages'][0]['latitude'] = 13.9652;
+  $arrPostData['messages'][0]['logitude'] = 100.588;
 }else{
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
